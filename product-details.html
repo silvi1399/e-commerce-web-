@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore premium product details, specifications, and buying options at Sirius Albania.">
+  <title>Product Details - Sirius Albania</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-page="product-detail">
+  <header>
+    <div class="container">
+      <div class="header-top">
+        <a href="index.html" class="logo">Sirius Albania</a>
+        <div class="search-bar">
+          <input type="text" placeholder="Search products..." class="search-input">
+          <button class="search-btn">Search</button>
+        </div>
+        <div class="header-actions">
+          <a href="#" class="user-account">Account</a>
+          <a href="cart.html" class="cart-icon">Cart <span class="cart-count">0</span></a>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="category-dropdown">
+            <a href="products.html">Categories ▼</a>
+            <div class="category-dropdown-content">
+              <a class="category-item" href="products.html?category=smartfone"><span class="category-icon">Phone</span><div><strong>Smartphones</strong><p>Latest mobile devices from top brands</p></div></a>
+              <a class="category-item" href="products.html?category=smartwatch"><span class="category-icon">Watch</span><div><strong>Smartwatches</strong><p>Fitness and wearable technology</p></div></a>
+              <a class="category-item" href="products.html?category=aksesore"><span class="category-icon">Access</span><div><strong>Accessories</strong><p>Chargers, cases, headphones and more</p></div></a>
+              <a class="category-item" href="products.html?category=laptope"><span class="category-icon">Laptop</span><div><strong>Laptops</strong><p>Gaming, business and everyday laptops</p></div></a>
+              <a class="category-item" href="products.html?category=desktop"><span class="category-icon">Desktop</span><div><strong>Desktop</strong><p>Workstations, office tech and creator setups</p></div></a>
+              <a class="category-item" href="products.html?category=displays"><span class="category-icon">Display</span><div><strong>Displays</strong><p>TVs, monitors and visual entertainment gear</p></div></a>
+              <a class="category-item" href="products.html?category=audio"><span class="category-icon">Audio</span><div><strong>Audio</strong><p>Speakers, headphones and sound systems</p></div></a>
+              <a class="category-item" href="products.html?category=gaming"><span class="category-icon">Gaming</span><div><strong>Gaming</strong><p>Consoles, controllers and accessories</p></div></a>
+            </div>
+          </li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 40px; padding-bottom: 60px;">
+    <p><a href="products.html" class="news-read-more">Back to Products</a></p>
+
+    <section class="product-detail">
+      <div class="product-detail-image">Phone</div>
+
+      <div class="product-detail-info">
+        <h1>Smartphone Premium</h1>
+        <p class="text-muted">Top-tier flagship performance with fast charging, premium materials, and long-term software support.</p>
+        <p class="product-detail-price">999 EUR</p>
+
+        <div class="info-card">
+          <h3>Availability</h3>
+          <p>In stock and ready for dispatch within 24 hours.</p>
+        </div>
+
+        <div class="product-specs">
+          <h3>Technical Specifications</h3>
+          <ul>
+            <li><strong>Display:</strong> 6.7-inch AMOLED panel</li>
+            <li><strong>Processor:</strong> Snapdragon 8 Gen series</li>
+            <li><strong>Memory:</strong> 12 GB RAM / 256 GB storage</li>
+            <li><strong>Camera:</strong> Triple rear system with night mode</li>
+            <li><strong>Battery:</strong> All-day battery with fast charging</li>
+            <li><strong>Connectivity:</strong> 5G, Wi-Fi 6, Bluetooth</li>
+          </ul>
+        </div>
+
+        <div class="form-group">
+          <label for="detail-qty">Quantity</label>
+          <div class="quantity-selector">
+            <button type="button" aria-label="Decrease quantity" onclick="document.getElementById('detail-qty').stepDown()">-</button>
+            <input id="detail-qty" type="number" value="1" min="1" max="10">
+            <button type="button" aria-label="Increase quantity" onclick="document.getElementById('detail-qty').stepUp()">+</button>
+          </div>
+        </div>
+
+        <div style="display: grid; gap: 12px; margin-top: 24px;">
+          <button class="btn" type="button">Add to Cart</button>
+          <button class="btn btn-secondary" type="button">Save to Wishlist</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-grid" style="margin-top: 48px;">
+      <article class="info-card">
+        <h2>Why it stands out</h2>
+        <p class="text-muted">Balanced performance, premium design, and reliable day-to-day battery life.</p>
+      </article>
+      <article class="info-card">
+        <h2>Shipping & returns</h2>
+        <p class="text-muted">Free returns within 30 days and official warranty support through Sirius Albania.</p>
+      </article>
+      <article class="info-card">
+        <h2>Included in the box</h2>
+        <p class="text-muted">Device, charging cable, documentation, and quick setup guide.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="enhanced-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-brand">
+          <span class="footer-eyebrow">Premium electronics store</span>
+          <h3>Sirius Albania</h3>
+          <p>Trusted destination for premium devices, accessories, and reliable nationwide delivery.</p>
+        </div>
+      </div>
+      <div class="footer-bottom-enhanced">
+        <div class="container">
+          <div class="footer-copyright"><p>&copy; 2026 Sirius Albania. All rights reserved.</p></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/site.js" defer></script>
+</body>
+</html>

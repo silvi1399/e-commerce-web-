@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse smartphones, laptops, accessories, gaming gear, displays, and more at Sirius Albania.">
+  <title>Products - Sirius Albania</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+  <div class="container">
+    <div class="header-top">
+      <a href="index.html" class="logo">⚡ Sirius Albania</a>
+      <div class="search-bar">
+        <input type="text" placeholder="Search products..." class="search-input">
+        <button class="search-btn">🔍</button>
+      </div>
+      <div class="header-actions">
+        <a href="#" class="user-account">👤 Account</a>
+        <a href="cart.html" class="cart-icon">🛒 <span class="cart-count">0</span></a>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="category-dropdown">
+          <a href="products.html">Categories ▼</a>
+          <div class="category-dropdown-content">
+            <a class="category-item" href="products.html?category=smartfone">
+              <span class="category-icon">📱</span>
+              <div>
+                <strong>Smartphones</strong>
+                <p>Latest mobile devices from top brands</p>
+              </div>
+            </a>
+            <a class="category-item" href="products.html?category=smartwatch">
+              <span class="category-icon">⌚</span>
+              <div>
+                <strong>Smartwatches</strong>
+                <p>Fitness and wearable technology</p>
+              </div>
+            </a>
+            <a class="category-item" href="products.html?category=aksesore">
+              <span class="category-icon">🔌</span>
+              <div>
+                <strong>Accessories</strong>
+                <p>Chargers, cases, headphones and more</p>
+              </div>
+            </a>
+            <a class="category-item" href="products.html?category=laptope">
+              <span class="category-icon">💻</span>
+              <div>
+                <strong>Laptops</strong>
+                <p>Gaming, business and everyday laptops</p>
+              </div>
+            </a>
+            <a class="category-item" href="products.html?category=desktop">
+              <span class="category-icon">🖥️</span>
+              <div>
+                <strong>Desktop</strong>
+                <p>Workstations, office tech and creator setups</p>
+              </div>
+            </a>
+            <a class="category-item" href="products.html?category=displays">
+              <span class="category-icon">📺</span>
+              <div>
+                <strong>Displays</strong>
+                <p>TVs, monitors and visual entertainment gear</p>
+              </div>
+            </a>
+            <a class="category-item" href="products.html?category=audio">
+              <span class="category-icon">🎧</span>
+              <div>
+                <strong>Audio</strong>
+                <p>Speakers, headphones and sound systems</p>
+              </div>
+            </a>
+            <a class="category-item" href="products.html?category=gaming">
+              <span class="category-icon">🎮</span>
+              <div>
+                <strong>Gaming</strong>
+                <p>Consoles, controllers and accessories</p>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <section style="background: linear-gradient(135deg, #0056b3 0%, #003d82 100%); color: white; padding: 40px 20px; text-align: center; margin-bottom: 40px;">
+    <div class="container">
+      <h1 id="products-page-title">All Products</h1>
+      <p id="products-page-subtitle">Smartphones, Laptops and Premium Quality Electronics</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <div class="toolbar">
+      <div class="toolbar-group">
+        <input class="toolbar-input" data-product-search type="search" placeholder="Search by product name or keyword">
+        <select class="toolbar-select" data-product-sort>
+          <option value="default">Sort: Featured</option>
+          <option value="price-asc">Price: Low to High</option>
+          <option value="price-desc">Price: High to Low</option>
+          <option value="name-asc">Name: A to Z</option>
+        </select>
+      </div>
+      <p class="text-muted" id="products-results-copy">Browse the full electronics catalog or jump into a category.</p>
+    </div>
+
+    <div id="product-filters" class="toolbar-group" style="margin-bottom: 30px;">
+      <button data-filter="all" class="pill-button is-active">All</button>
+      <button data-filter="smartfone" class="pill-button">Smartphones</button>
+      <button data-filter="laptope" class="pill-button">Laptops</button>
+      <button data-filter="smartwatch" class="pill-button">Smartwatches</button>
+      <button data-filter="gaming" class="pill-button">Gaming</button>
+      <button data-filter="audio" class="pill-button">Audio</button>
+      <button data-filter="aksesore" class="pill-button">Accessories</button>
+      <button data-filter="desktop" class="pill-button">Desktop</button>
+      <button data-filter="displays" class="pill-button">Displays</button>
+    </div>
+
+    <p id="products-empty-state" style="display: none; text-align: center; color: #666; margin: 10px 0 30px;">No products found in this category.</p>
+
+    <div class="products-grid">
+      <!-- Smartfone -->
+      <div class="product-card" data-category="smartfone">
+        <div class="product-image">📱</div>
+        <div class="product-info">
+          <div class="product-name">Smartphone Premium</div>
+          <div class="product-description">Ekran AMOLED 6.7", 256GB, 5G</div>
+          <div class="product-price">999 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="smartfone">
+        <div class="product-image">📱</div>
+        <div class="product-info">
+          <div class="product-name">Smartphone Pro Max</div>
+          <div class="product-description">5G, 1TB Storage, Triple Camera</div>
+          <div class="product-price">1,299 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="smartfone">
+        <div class="product-image">📱</div>
+        <div class="product-info">
+          <div class="product-name">Mid-Range Smartphone</div>
+          <div class="product-description">Snapdragon 8 Gen 1, 128GB</div>
+          <div class="product-price">599 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="smartfone">
+        <div class="product-image">📱</div>
+        <div class="product-info">
+          <div class="product-name">Budget Smartphone</div>
+          <div class="product-description">Snapdragon 6 Gen 1, 64GB</div>
+          <div class="product-price">349 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="smartfone">
+        <div class="product-image">📱</div>
+        <div class="product-info">
+          <div class="product-name">Gaming Smartphone</div>
+          <div class="product-description">Enhanced GPU, Cooling System</div>
+          <div class="product-price">1,099 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Laptop -->
+      <div class="product-card" data-category="laptope">
+        <div class="product-image">💻</div>
+        <div class="product-info">
+          <div class="product-name">Gaming Laptop</div>
+          <div class="product-description">RTX 4060, 16GB RAM, 512GB SSD</div>
+          <div class="product-price">2,499 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="laptope">
+        <div class="product-image">💻</div>
+        <div class="product-info">
+          <div class="product-name">Laptop Professional</div>
+          <div class="product-description">Intel i7, 32GB RAM, 1TB SSD</div>
+          <div class="product-price">2,899 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="laptope">
+        <div class="product-image">💻</div>
+        <div class="product-info">
+          <div class="product-name">Laptop Budget</div>
+          <div class="product-description">Intel i5, 8GB RAM, 256GB SSD</div>
+          <div class="product-price">1,299 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="laptope">
+        <div class="product-image">💻</div>
+        <div class="product-info">
+          <div class="product-name">Ultrabook Premium</div>
+          <div class="product-description">Intel i7, 16GB RAM, 512GB SSD</div>
+          <div class="product-price">2,199 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tablet -->
+      <div class="product-card" data-category="displays">
+        <div class="product-image">📱</div>
+        <div class="product-info">
+          <div class="product-name">Tablet Pro 12.9"</div>
+          <div class="product-description">M2 Chip, 8GB RAM, OLED</div>
+          <div class="product-price">1,299 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="displays">
+        <div class="product-image">📱</div>
+        <div class="product-info">
+          <div class="product-name">Tablet Mid-Range 10"</div>
+          <div class="product-description">Snapdragon 8 Gen 1, 6GB RAM</div>
+          <div class="product-price">799 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Smartwatch & Wearables -->
+      <div class="product-card" data-category="smartwatch">
+        <div class="product-image">⌚</div>
+        <div class="product-info">
+          <div class="product-name">Smartwatch PRO</div>
+          <div class="product-description">Monitor Zemre, GPS, 5ATM</div>
+          <div class="product-price">449 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="smartwatch">
+        <div class="product-image">⌚</div>
+        <div class="product-info">
+          <div class="product-name">Smartwatch Budget</div>
+          <div class="product-description">Ekran AMOLED, 10 ditë baterie</div>
+          <div class="product-price">199 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Kamera -->
+      <div class="product-card" data-category="displays">
+        <div class="product-image">📷</div>
+        <div class="product-info">
+          <div class="product-name">Kamera Mirrorless</div>
+          <div class="product-description">24MP, 4K Video, Hybrid AF</div>
+          <div class="product-price">1,799 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="displays">
+        <div class="product-image">📷</div>
+        <div class="product-info">
+          <div class="product-name">Kamera DSLR</div>
+          <div class="product-description">24.2MP, Full Frame, 4K</div>
+          <div class="product-price">1,599 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="desktop">
+        <div class="product-image">📹</div>
+        <div class="product-info">
+          <div class="product-name">Action Camera 4K</div>
+          <div class="product-description">Waterproof, Stabilizim 6-akeli</div>
+          <div class="product-price">599 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Audio -->
+      <div class="product-card" data-category="audio">
+        <div class="product-image">🎧</div>
+        <div class="product-info">
+          <div class="product-name">Kufje Wireless Premium</div>
+          <div class="product-description">Zhurma -40dB, 40 orë baterie</div>
+          <div class="product-price">349 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="audio">
+        <div class="product-image">🎧</div>
+        <div class="product-info">
+          <div class="product-name">Earbuds Wireless</div>
+          <div class="product-description">True Wireless, Zhurma Aktive</div>
+          <div class="product-price">149 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="audio">
+        <div class="product-image">🔊</div>
+        <div class="product-info">
+          <div class="product-name">Altoparlante Bluetooth</div>
+          <div class="product-description">300W, 360° Tingull, Portable</div>
+          <div class="product-price">299 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="audio">
+        <div class="product-image">🎙️</div>
+        <div class="product-info">
+          <div class="product-name">Studio Headphones</div>
+          <div class="product-description">Professional Audio, 50mm Driver</div>
+          <div class="product-price">599 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- TV & Display -->
+      <div class="product-card" data-category="displays">
+        <div class="product-image">📺</div>
+        <div class="product-info">
+          <div class="product-name">TV 4K Smart</div>
+          <div class="product-description">75 inç, QLED, 120Hz Refresh</div>
+          <div class="product-price">2,199 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="displays">
+        <div class="product-image">📺</div>
+        <div class="product-info">
+          <div class="product-name">TV OLED 65"</div>
+          <div class="product-description">4K, HDR10+, Dolby Vision</div>
+          <div class="product-price">2,999 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="displays">
+        <div class="product-image">🖥️</div>
+        <div class="product-info">
+          <div class="product-name">Monitor 4K 27"</div>
+          <div class="product-description">IPS, 144Hz, USB-C, HDR</div>
+          <div class="product-price">899 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="displays">
+        <div class="product-image">🖥️</div>
+        <div class="product-info">
+          <div class="product-name">Gaming Monitor Curved</div>
+          <div class="product-description">32" 1440p, 165Hz, VA Panel</div>
+          <div class="product-price">749 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gaming -->
+      <div class="product-card" data-category="gaming">
+        <div class="product-image">🎮</div>
+        <div class="product-info">
+          <div class="product-name">Gaming Console</div>
+          <div class="product-description">1TB, 4K, 120fps Gaming</div>
+          <div class="product-price">599 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="gaming">
+        <div class="product-image">🎮</div>
+        <div class="product-info">
+          <div class="product-name">Handheld Gaming</div>
+          <div class="product-description">7" OLED, 1000 Lojëra</div>
+          <div class="product-price">499 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="gaming">
+        <div class="product-image">⌨️</div>
+        <div class="product-info">
+          <div class="product-name">Keyboard Gaming Mekanik</div>
+          <div class="product-description">RGB, Switch Mekanik, Programmable</div>
+          <div class="product-price">199 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="gaming">
+        <div class="product-image">🖱️</div>
+        <div class="product-info">
+          <div class="product-name">Gaming Mouse Wireless</div>
+          <div class="product-description">16000DPI, 70 orë baterie</div>
+          <div class="product-price">159 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Aksesore -->
+      <div class="product-card" data-category="aksesore">
+        <div class="product-image">🔌</div>
+        <div class="product-info">
+          <div class="product-name">Power Bank 20000mAh</div>
+          <div class="product-description">100W, Ngarkesë e shpejtë</div>
+          <div class="product-price">129 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="aksesore">
+        <div class="product-image">🔌</div>
+        <div class="product-info">
+          <div class="product-name">Charger Wireless</div>
+          <div class="product-description">15W, Fast Charging, Compact</div>
+          <div class="product-price">49 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="aksesore">
+        <div class="product-image">📡</div>
+        <div class="product-info">
+          <div class="product-name">Router Wi-Fi 6</div>
+          <div class="product-description">AX1500, Tri-Band, Fast Speed</div>
+          <div class="product-price">249 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="aksesore">
+        <div class="product-image">💾</div>
+        <div class="product-info">
+          <div class="product-name">SSD Extern 1TB</div>
+          <div class="product-description">1050MB/s, Portabil, USB-C</div>
+          <div class="product-price">199 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="aksesore">
+        <div class="product-image">🔐</div>
+        <div class="product-info">
+          <div class="product-name">USB Hub Docking Station</div>
+          <div class="product-description">7 Port, Aluminum, Fast Transfer</div>
+          <div class="product-price">89 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="aksesore">
+        <div class="product-image">📱</div>
+        <div class="product-info">
+          <div class="product-name">Phone Case Premium</div>
+          <div class="product-description">Shockproof, Clear Design</div>
+          <div class="product-price">39 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="aksesore">
+        <div class="product-image">🛡️</div>
+        <div class="product-info">
+          <div class="product-name">Screen Protector Glass</div>
+          <div class="product-description">Tempered Glass, Anti-glare</div>
+          <div class="product-price">19 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Office & Periferike -->
+      <div class="product-card" data-category="desktop">
+        <div class="product-image">🖨️</div>
+        <div class="product-info">
+          <div class="product-name">Printer Wireless</div>
+          <div class="product-description">All-in-One, WiFi, Mobile Print</div>
+          <div class="product-price">299 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="desktop">
+        <div class="product-image">📹</div>
+        <div class="product-info">
+          <div class="product-name">Webcam 4K</div>
+          <div class="product-description">Auto Focus, Built-in Mic, USB</div>
+          <div class="product-price">129 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="desktop">
+        <div class="product-image">🎙️</div>
+        <div class="product-info">
+          <div class="product-name">USB Microphone</div>
+          <div class="product-description">Studio Quality, Pop Filter</div>
+          <div class="product-price">179 ALL</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>
+        <h4>About Sirius</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Find Us</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Work with Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Terms of Use</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Exchange Policy</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Us Online</h4>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Instagram</a></li>
+          <li><a href="#">YouTube</a></li>
+          <li><a href="#">TikTok</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact Info</h4>
+        <ul>
+          <li>📞 +355 4 227 2000</li>
+          <li>📧 info@siriusalb.com</li>
+          <li>📍 Tirana, Albania</li>
+          <li>🕒 24/7 Company</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sirius Albania. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    const filterButtons = document.querySelectorAll('#product-filters [data-filter]');
+    const productCards = document.querySelectorAll('.products-grid .product-card');
+    const pageTitle = document.getElementById('products-page-title');
+    const pageSubtitle = document.getElementById('products-page-subtitle');
+    const emptyState = document.getElementById('products-empty-state');
+    const resultsCopy = document.getElementById('products-results-copy');
+
+    const categoryMeta = {
+      all: {
+        title: 'All Products',
+        subtitle: 'Smartphones, Laptops and Premium Quality Electronics'
+      },
+      smartfone: {
+        title: 'Smartphones',
+        subtitle: 'Browse only smartphones and mobile devices'
+      },
+      laptope: {
+        title: 'Laptops',
+        subtitle: 'Gaming, business and everyday laptops'
+      },
+      smartwatch: {
+        title: 'Smartwatches',
+        subtitle: 'Wearables, health tracking and smart devices'
+      },
+      gaming: {
+        title: 'Gaming',
+        subtitle: 'Consoles, gaming gear and performance accessories'
+      },
+      audio: {
+        title: 'Audio',
+        subtitle: 'Headphones, speakers and premium sound products'
+      },
+      aksesore: {
+        title: 'Accessories',
+        subtitle: 'Chargers, docks, cases and everyday essentials'
+      },
+      desktop: {
+        title: 'Desktop',
+        subtitle: 'Workstations, office tech, cameras and creator gear'
+      },
+      displays: {
+        title: 'Displays',
+        subtitle: 'TVs, monitors and large-screen visual products'
+      }
+    };
+
+    function applyFilter(category) {
+      const activeCategory = categoryMeta[category] ? category : 'all';
+      let visibleCount = 0;
+
+      productCards.forEach(card => {
+        const matches = activeCategory === 'all' || card.dataset.category === activeCategory;
+        card.dataset.filteredOut = matches ? 'false' : 'true';
+        card.style.display = matches ? '' : 'none';
+        if (matches) visibleCount += 1;
+      });
+
+      filterButtons.forEach(button => {
+        const isActive = button.dataset.filter === activeCategory;
+        button.classList.toggle('is-active', isActive);
+      });
+
+      pageTitle.textContent = categoryMeta[activeCategory].title;
+      pageSubtitle.textContent = categoryMeta[activeCategory].subtitle;
+      emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
+      resultsCopy.textContent = visibleCount === 0
+        ? 'No matching products in this category.'
+        : `${visibleCount} product${visibleCount === 1 ? '' : 's'} available in ${categoryMeta[activeCategory].title}.`;
+
+      const nextUrl = activeCategory === 'all'
+        ? 'products.html'
+        : `products.html?category=${activeCategory}`;
+      history.replaceState({}, '', nextUrl);
+    }
+
+    filterButtons.forEach(button => {
+      button.addEventListener('click', () => applyFilter(button.dataset.filter));
+    });
+
+    const params = new URLSearchParams(window.location.search);
+    applyFilter(params.get('category') || 'all');
+  </script>
+  <script src="js/site.js" defer></script>
+</body>
+</html>
+
+
