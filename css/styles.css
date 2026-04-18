@@ -27,67 +27,175 @@ textarea:focus-visible {
 
 /* Header */
 header {
-  background: linear-gradient(135deg, #0f3460 0%, #16213e 50%, #0f3460 100%);
+  background: #0f3460;
   color: white;
-  padding: 15px 0;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   position: sticky;
   top: 0;
   z-index: 1000;
-  backdrop-filter: blur(10px);
-  background-color: rgba(15, 52, 96, 0.95);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
-header .container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.header-top {
+.header-main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 15px;
+  gap: 22px;
+  padding: 18px 30px 22px;
+  flex-wrap: nowrap;
+}
+
+.header-main > * {
+  min-width: 0;
 }
 
 .logo {
-  font-size: 28px;
-  font-weight: 800;
+  flex: 0 0 auto;
+}
+
+.menu-trigger {
+  flex: 0 0 210px;
+  min-width: 180px;
+  max-width: 240px;
+}
+
+.search-bar {
+  flex: 1 1 1;
+  margin: 0;
+  min-width: 0;
+  max-width: 520px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: flex-end;
+  font-size: 36px;
+  font-weight: 900;
   text-decoration: none;
+  color: #ffffff;
+  letter-spacing: 0.18em;
+  position: relative;
+  padding-bottom: 4px;
+  background: none;
+}
+
+.logo::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, #ff006e, #fb5607);
+  border-radius: 2px;
+}
+
+.logo-text {
   color: white;
+}
+
+.menu-trigger {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 20px 12px 44px;
+  gap: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 18px;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+}
+
+.menu-trigger::before {
+  content: '';
+  position: absolute;
+  left: 16px;
+  width: 16px;
+  height: 2px;
+  background: #ffffff;
+  box-shadow: 0 5px 0 #ffffff, 0 10px 0 #ffffff;
+}
+
+.menu-trigger > a {
+  color: inherit;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.menu-trigger:hover {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: rgba(255, 255, 255, 0.35);
+  transform: translateY(-1px);
+}
+
+.menu-trigger.category-dropdown .category-dropdown-content {
+  left: 0;
+  top: calc(100% + 10px);
+}
+
+.menu-trigger.category-dropdown:hover .category-dropdown-content {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.header-actions {
   display: flex;
   align-items: center;
-  gap: 10px;
-  letter-spacing: -0.5px;
-  background: linear-gradient(135deg, #ff006e, #fb5607);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  filter: drop-shadow(0 2px 4px rgba(255, 0, 110, 0.3));
+  gap: 18px;
+}
+
+.header-actions a {
+  color: #ffffff;
+  font-size: 18px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-icon {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  min-width: 18px;
+  height: 18px;
+  border-radius: 999px;
+  background: #ff006e;
+  color: #ffffff;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5px;
 }
 
 .search-bar {
   display: flex;
   align-items: center;
   background: white;
-  border-radius: 25px;
-  padding: 5px;
+  border-radius: 28px;
+  padding: 6px;
   flex: 1;
-  max-width: 500px;
-  margin: 0 30px;
+  max-width: 520px;
+  margin: 0;
 }
 
 .search-input {
   flex: 1;
   border: none;
-  padding: 10px 15px;
-  border-radius: 20px;
+  padding: 12px 16px;
+  border-radius: 22px;
   font-size: 14px;
   outline: none;
 }
@@ -159,10 +267,7 @@ header .container {
 
 /* Navigation */
 nav {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  padding: 10px 20px;
-  width: 100%;
+  display: none;
 }
 
 nav ul {
@@ -1528,26 +1633,32 @@ footer a:hover {
 
 /* Responsive Design */
 @media (max-width: 1024px) {
-  .header-top {
-    flex-wrap: wrap;
-    gap: 15px;
+  .header-main {
+    gap: 14px;
+    padding: 15px 20px;
+  }
+
+  .menu-trigger {
+    flex: 0 0 190px;
+    min-width: 160px;
+    max-width: 220px;
   }
 
   .search-bar {
-    order: 3;
-    width: 100%;
-    max-width: none;
-    margin: 0;
+    flex: 1 1 1;
+    min-width: 0;
+    max-width: 420px;
   }
 
   .header-actions {
-    order: 2;
+    flex-shrink: 0;
+    gap: 16px;
   }
 
   .category-dropdown-content {
-    min-width: 300px;
-    max-width: 360px;
-    left: -150px;
+    min-width: 280px;
+    max-width: 340px;
+    left: -120px;
   }
 
   .live-band-grid {
@@ -1556,31 +1667,42 @@ footer a:hover {
 }
 
 @media (max-width: 768px) {
-  header .container {
+  header .container,
+  .header-main {
     padding: 0 15px;
   }
 
-  .header-top {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 10px;
+  .logo {
+    font-size: 28px;
+    letter-spacing: 0.12em;
+    text-align: left;
   }
 
-  .logo {
-    text-align: center;
-    font-size: 24px;
+  .menu-trigger {
+    flex: 0 0 160px;
+    width: auto;
+    padding-left: 18px;
   }
 
   .search-bar {
-    order: 2;
-    width: 100%;
-    margin: 10px 0;
+    flex: 1 1 1;
+    min-width: 0;
+    max-width: none;
+    margin: 0;
+  }
+
+  .search-input {
+    padding: 10px 12px;
+    font-size: 13px;
+  }
+
+  .search-btn {
+    padding: 10px 12px;
   }
 
   .header-actions {
-    order: 3;
-    justify-content: center;
-    gap: 30px;
+    justify-content: flex-end;
+    gap: 18px;
   }
 
   nav {
@@ -2743,3 +2865,51 @@ footer a:hover {
     overflow-wrap: anywhere;
   }
 }
+
+/* ================= FIX HEADER ALIGN ================= */
+
+.header-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 14px 25px;
+  flex-wrap: nowrap;
+  
+}
+
+/* Logo */
+.logo {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+/* Menu button */
+.menu-trigger {
+  flex: 0 0 auto;
+  min-width: auto;
+  max-width: none;
+}
+
+/* Search bar (mos te zgjerohet shume) */
+.search-bar {
+  flex: 1;
+  max-width: 500px;
+  min-width: 200px;
+}
+
+/* Actions (ikonat djathtas) */
+.header-actions {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  white-space: nowrap;
+}
+
+/* Sigurohu qe çdo element te mos kaloje ne rresht tjeter */
+.header-main > * {
+  min-width: 0;
+}
+
+/* ================= END FIX ================= */
