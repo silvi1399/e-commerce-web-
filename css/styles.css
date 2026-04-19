@@ -2937,7 +2937,7 @@ footer a:hover {
   min-width: 200px;
 }
 
-/* Actions (ikonat djathtas) */
+/* Actions (right-side icons) */
 .header-actions {
   flex: 0 0 auto;
   display: flex;
@@ -2946,7 +2946,7 @@ footer a:hover {
   white-space: nowrap;
 }
 
-/* Sigurohu qe çdo element te mos kaloje ne rresht tjeter */
+/* Make sure each element stays on one line */
 .header-main > * {
   min-width: 0;
 }
