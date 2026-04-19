@@ -8,7 +8,7 @@ function parsePriceValue(text) {
 }
 
 function formatCurrency(value) {
-  return `${value.toLocaleString('en-US')} EUR`;
+  return `${value.toLocaleString('en-US')} €`;
 }
 
 function readCart() {

@@ -49,11 +49,32 @@
               <p>Workstations, office tech and creator setups</p>
             </div>
           </a>
-          <a class="category-item" href="products.html?category=displays">
+          <a class="category-item" href="products.html?category=tablets">
+            <span class="category-icon">📱</span>
+            <div>
+              <strong>Tablets</strong>
+              <p>Portable tablets for work, creativity and entertainment</p>
+            </div>
+          </a>
+          <a class="category-item" href="products.html?category=cameras">
+            <span class="category-icon">📷</span>
+            <div>
+              <strong>Cameras</strong>
+              <p>Mirrorless, DSLR and action cameras</p>
+            </div>
+          </a>
+          <a class="category-item" href="products.html?category=tvs">
             <span class="category-icon">📺</span>
             <div>
-              <strong>Displays</strong>
-              <p>TVs, monitors and visual entertainment gear</p>
+              <strong>TVs</strong>
+              <p>Smart TVs and home entertainment screens</p>
+            </div>
+          </a>
+          <a class="category-item" href="products.html?category=monitors">
+            <span class="category-icon">🖥️</span>
+            <div>
+              <strong>Monitors</strong>
+              <p>Gaming and professional computer monitors</p>
             </div>
           </a>
           <a class="category-item" href="products.html?category=audio">
@@ -121,14 +142,35 @@
                 <strong>Desktop</strong>
                 <p>Workstations, office tech and creator setups</p>
               </div>
-            </a>
-            <a class="category-item" href="products.html?category=displays">
-              <span class="category-icon">📺</span>
-              <div>
-                <strong>Displays</strong>
-                <p>TVs, monitors and visual entertainment gear</p>
-              </div>
-            </a>
+          </a>
+          <a class="category-item" href="products.html?category=tablets">
+            <span class="category-icon">📱</span>
+            <div>
+              <strong>Tablets</strong>
+              <p>Portable tablets for work, creativity and entertainment</p>
+            </div>
+          </a>
+          <a class="category-item" href="products.html?category=cameras">
+            <span class="category-icon">📷</span>
+            <div>
+              <strong>Cameras</strong>
+              <p>Mirrorless, DSLR and action cameras</p>
+            </div>
+          </a>
+          <a class="category-item" href="products.html?category=tvs">
+            <span class="category-icon">📺</span>
+            <div>
+              <strong>TVs</strong>
+              <p>Smart TVs and home entertainment screens</p>
+            </div>
+          </a>
+          <a class="category-item" href="products.html?category=monitors">
+            <span class="category-icon">🖥️</span>
+            <div>
+              <strong>Monitors</strong>
+              <p>Gaming and professional computer monitors</p>
+            </div>
+          </a>
             <a class="category-item" href="products.html?category=audio">
               <span class="category-icon">🎧</span>
               <div>
@@ -163,6 +205,13 @@
     <div class="toolbar">
       <div class="toolbar-group">
         <input class="toolbar-input" data-product-search type="search" placeholder="Search by product name or keyword">
+        <select class="toolbar-select" data-product-price>
+          <option value="all">Price: All</option>
+          <option value="0-100">Under 100 &euro;</option>
+          <option value="100-500">100 - 500 &euro;</option>
+          <option value="500-1000">500 - 1000 &euro;</option>
+          <option value="1000+">Over 1000 &euro;</option>
+        </select>
         <select class="toolbar-select" data-product-sort>
           <option value="default">Sort: Featured</option>
           <option value="price-asc">Price: Low to High</option>
@@ -182,7 +231,10 @@
       <button data-filter="audio" class="pill-button">Audio</button>
       <button data-filter="aksesore" class="pill-button">Accessories</button>
       <button data-filter="desktop" class="pill-button">Desktop</button>
-      <button data-filter="displays" class="pill-button">Displays</button>
+      <button data-filter="tablets" class="pill-button">Tablets</button>
+      <button data-filter="cameras" class="pill-button">Cameras</button>
+      <button data-filter="tvs" class="pill-button">TVs</button>
+      <button data-filter="monitors" class="pill-button">Monitors</button>
     </div>
 
     <p id="products-empty-state" style="display: none; text-align: center; color: #666; margin: 10px 0 30px;">No products found in this category.</p>
@@ -194,7 +246,7 @@
         <div class="product-info">
           <div class="product-name">Smartphone Premium</div>
           <div class="product-description">Ekran AMOLED 6.7", 256GB, 5G</div>
-          <div class="product-price">999 ALL</div>
+          <div class="product-price">1,199 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Add to Cart</button>
@@ -207,7 +259,7 @@
         <div class="product-info">
           <div class="product-name">Smartphone Pro Max</div>
           <div class="product-description">5G, 1TB Storage, Triple Camera</div>
-          <div class="product-price">1,299 ALL</div>
+          <div class="product-price">1,599 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Add to Cart</button>
@@ -220,7 +272,7 @@
         <div class="product-info">
           <div class="product-name">Mid-Range Smartphone</div>
           <div class="product-description">Snapdragon 8 Gen 1, 128GB</div>
-          <div class="product-price">599 ALL</div>
+          <div class="product-price">749 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Add to Cart</button>
@@ -233,7 +285,7 @@
         <div class="product-info">
           <div class="product-name">Budget Smartphone</div>
           <div class="product-description">Snapdragon 6 Gen 1, 64GB</div>
-          <div class="product-price">349 ALL</div>
+          <div class="product-price">429 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Add to Cart</button>
@@ -246,7 +298,7 @@
         <div class="product-info">
           <div class="product-name">Gaming Smartphone</div>
           <div class="product-description">Enhanced GPU, Cooling System</div>
-          <div class="product-price">1,099 ALL</div>
+          <div class="product-price">1,299 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Add to Cart</button>
@@ -260,7 +312,7 @@
         <div class="product-info">
           <div class="product-name">Gaming Laptop</div>
           <div class="product-description">RTX 4060, 16GB RAM, 512GB SSD</div>
-          <div class="product-price">2,499 ALL</div>
+          <div class="product-price">1,899 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Add to Cart</button>
@@ -273,7 +325,7 @@
         <div class="product-info">
           <div class="product-name">Laptop Professional</div>
           <div class="product-description">Intel i7, 32GB RAM, 1TB SSD</div>
-          <div class="product-price">2,899 ALL</div>
+          <div class="product-price">2,199 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -286,7 +338,7 @@
         <div class="product-info">
           <div class="product-name">Laptop Budget</div>
           <div class="product-description">Intel i5, 8GB RAM, 256GB SSD</div>
-          <div class="product-price">1,299 ALL</div>
+          <div class="product-price">899 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -299,7 +351,7 @@
         <div class="product-info">
           <div class="product-name">Ultrabook Premium</div>
           <div class="product-description">Intel i7, 16GB RAM, 512GB SSD</div>
-          <div class="product-price">2,199 ALL</div>
+          <div class="product-price">1,599 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -308,12 +360,12 @@
       </div>
 
       <!-- Tablet -->
-      <div class="product-card" data-category="displays">
+      <div class="product-card" data-category="tablets">
         <div class="product-image">📱</div>
         <div class="product-info">
           <div class="product-name">Tablet Pro 12.9"</div>
           <div class="product-description">M2 Chip, 8GB RAM, OLED</div>
-          <div class="product-price">1,299 ALL</div>
+          <div class="product-price">1,349 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -321,12 +373,12 @@
         </div>
       </div>
 
-      <div class="product-card" data-category="displays">
+      <div class="product-card" data-category="tablets">
         <div class="product-image">📱</div>
         <div class="product-info">
           <div class="product-name">Tablet Mid-Range 10"</div>
           <div class="product-description">Snapdragon 8 Gen 1, 6GB RAM</div>
-          <div class="product-price">799 ALL</div>
+          <div class="product-price">649 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -340,7 +392,7 @@
         <div class="product-info">
           <div class="product-name">Smartwatch PRO</div>
           <div class="product-description">Monitor Zemre, GPS, 5ATM</div>
-          <div class="product-price">449 ALL</div>
+          <div class="product-price">349 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -353,7 +405,7 @@
         <div class="product-info">
           <div class="product-name">Smartwatch Budget</div>
           <div class="product-description">Ekran AMOLED, 10 ditë baterie</div>
-          <div class="product-price">199 ALL</div>
+          <div class="product-price">129 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -362,12 +414,12 @@
       </div>
 
       <!-- Kamera -->
-      <div class="product-card" data-category="displays">
+      <div class="product-card" data-category="cameras">
         <div class="product-image">📷</div>
         <div class="product-info">
           <div class="product-name">Kamera Mirrorless</div>
           <div class="product-description">24MP, 4K Video, Hybrid AF</div>
-          <div class="product-price">1,799 ALL</div>
+          <div class="product-price">1,499 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -375,12 +427,12 @@
         </div>
       </div>
 
-      <div class="product-card" data-category="displays">
+      <div class="product-card" data-category="cameras">
         <div class="product-image">📷</div>
         <div class="product-info">
           <div class="product-name">Kamera DSLR</div>
           <div class="product-description">24.2MP, Full Frame, 4K</div>
-          <div class="product-price">1,599 ALL</div>
+          <div class="product-price">1,699 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -388,12 +440,12 @@
         </div>
       </div>
 
-      <div class="product-card" data-category="desktop">
+      <div class="product-card" data-category="cameras">
         <div class="product-image">📹</div>
         <div class="product-info">
           <div class="product-name">Action Camera 4K</div>
           <div class="product-description">Waterproof, Stabilizim 6-akeli</div>
-          <div class="product-price">599 ALL</div>
+          <div class="product-price">329 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -407,7 +459,7 @@
         <div class="product-info">
           <div class="product-name">Kufje Wireless Premium</div>
           <div class="product-description">Zhurma -40dB, 40 orë baterie</div>
-          <div class="product-price">349 ALL</div>
+          <div class="product-price">279 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -420,7 +472,7 @@
         <div class="product-info">
           <div class="product-name">Earbuds Wireless</div>
           <div class="product-description">True Wireless, Zhurma Aktive</div>
-          <div class="product-price">149 ALL</div>
+          <div class="product-price">149 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -433,7 +485,7 @@
         <div class="product-info">
           <div class="product-name">Altoparlante Bluetooth</div>
           <div class="product-description">300W, 360° Tingull, Portable</div>
-          <div class="product-price">299 ALL</div>
+          <div class="product-price">199 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -446,7 +498,7 @@
         <div class="product-info">
           <div class="product-name">Studio Headphones</div>
           <div class="product-description">Professional Audio, 50mm Driver</div>
-          <div class="product-price">599 ALL</div>
+          <div class="product-price">249 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -455,12 +507,12 @@
       </div>
 
       <!-- TV & Display -->
-      <div class="product-card" data-category="displays">
+      <div class="product-card" data-category="tvs">
         <div class="product-image">📺</div>
         <div class="product-info">
           <div class="product-name">TV 4K Smart</div>
           <div class="product-description">75 inç, QLED, 120Hz Refresh</div>
-          <div class="product-price">2,199 ALL</div>
+          <div class="product-price">1,499 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -468,12 +520,12 @@
         </div>
       </div>
 
-      <div class="product-card" data-category="displays">
+      <div class="product-card" data-category="tvs">
         <div class="product-image">📺</div>
         <div class="product-info">
           <div class="product-name">TV OLED 65"</div>
           <div class="product-description">4K, HDR10+, Dolby Vision</div>
-          <div class="product-price">2,999 ALL</div>
+          <div class="product-price">2,199 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -481,12 +533,12 @@
         </div>
       </div>
 
-      <div class="product-card" data-category="displays">
+      <div class="product-card" data-category="monitors">
         <div class="product-image">🖥️</div>
         <div class="product-info">
           <div class="product-name">Monitor 4K 27"</div>
           <div class="product-description">IPS, 144Hz, USB-C, HDR</div>
-          <div class="product-price">899 ALL</div>
+          <div class="product-price">599 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -494,12 +546,12 @@
         </div>
       </div>
 
-      <div class="product-card" data-category="displays">
+      <div class="product-card" data-category="monitors">
         <div class="product-image">🖥️</div>
         <div class="product-info">
           <div class="product-name">Gaming Monitor Curved</div>
           <div class="product-description">32" 1440p, 165Hz, VA Panel</div>
-          <div class="product-price">749 ALL</div>
+          <div class="product-price">449 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -513,7 +565,7 @@
         <div class="product-info">
           <div class="product-name">Gaming Console</div>
           <div class="product-description">1TB, 4K, 120fps Gaming</div>
-          <div class="product-price">599 ALL</div>
+          <div class="product-price">549 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -526,7 +578,7 @@
         <div class="product-info">
           <div class="product-name">Handheld Gaming</div>
           <div class="product-description">7" OLED, 1000 Lojëra</div>
-          <div class="product-price">499 ALL</div>
+          <div class="product-price">399 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -539,7 +591,7 @@
         <div class="product-info">
           <div class="product-name">Keyboard Gaming Mekanik</div>
           <div class="product-description">RGB, Switch Mekanik, Programmable</div>
-          <div class="product-price">199 ALL</div>
+          <div class="product-price">129 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -552,7 +604,7 @@
         <div class="product-info">
           <div class="product-name">Gaming Mouse Wireless</div>
           <div class="product-description">16000DPI, 70 orë baterie</div>
-          <div class="product-price">159 ALL</div>
+          <div class="product-price">89 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -566,7 +618,7 @@
         <div class="product-info">
           <div class="product-name">Power Bank 20000mAh</div>
           <div class="product-description">100W, Ngarkesë e shpejtë</div>
-          <div class="product-price">129 ALL</div>
+          <div class="product-price">79 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -579,7 +631,7 @@
         <div class="product-info">
           <div class="product-name">Charger Wireless</div>
           <div class="product-description">15W, Fast Charging, Compact</div>
-          <div class="product-price">49 ALL</div>
+          <div class="product-price">39 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -592,7 +644,7 @@
         <div class="product-info">
           <div class="product-name">Router Wi-Fi 6</div>
           <div class="product-description">AX1500, Tri-Band, Fast Speed</div>
-          <div class="product-price">249 ALL</div>
+          <div class="product-price">139 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -605,7 +657,7 @@
         <div class="product-info">
           <div class="product-name">SSD Extern 1TB</div>
           <div class="product-description">1050MB/s, Portabil, USB-C</div>
-          <div class="product-price">199 ALL</div>
+          <div class="product-price">129 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -618,7 +670,7 @@
         <div class="product-info">
           <div class="product-name">USB Hub Docking Station</div>
           <div class="product-description">7 Port, Aluminum, Fast Transfer</div>
-          <div class="product-price">89 ALL</div>
+          <div class="product-price">69 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -631,7 +683,7 @@
         <div class="product-info">
           <div class="product-name">Phone Case Premium</div>
           <div class="product-description">Shockproof, Clear Design</div>
-          <div class="product-price">39 ALL</div>
+          <div class="product-price">29 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -644,7 +696,7 @@
         <div class="product-info">
           <div class="product-name">Screen Protector Glass</div>
           <div class="product-description">Tempered Glass, Anti-glare</div>
-          <div class="product-price">19 ALL</div>
+          <div class="product-price">15 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -658,7 +710,7 @@
         <div class="product-info">
           <div class="product-name">Printer Wireless</div>
           <div class="product-description">All-in-One, WiFi, Mobile Print</div>
-          <div class="product-price">299 ALL</div>
+          <div class="product-price">189 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -671,7 +723,7 @@
         <div class="product-info">
           <div class="product-name">Webcam 4K</div>
           <div class="product-description">Auto Focus, Built-in Mic, USB</div>
-          <div class="product-price">129 ALL</div>
+          <div class="product-price">89 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
@@ -684,10 +736,126 @@
         <div class="product-info">
           <div class="product-name">USB Microphone</div>
           <div class="product-description">Studio Quality, Pop Filter</div>
-          <div class="product-price">179 ALL</div>
+          <div class="product-price">119 €</div>
           <div class="product-actions">
             <a href="product-details.html" class="btn-view">Details</a>
             <button class="btn-add">Shto në Shportë</button>
+          </div>
+        </div>
+      </div>
+      <div class="product-card" data-category="smartfone">
+        <div class="product-image">ðŸ“±</div>
+        <div class="product-info">
+          <div class="product-name">Fold Smartphone Ultra</div>
+          <div class="product-description">7.6" Foldable AMOLED, 512GB, Pro Multitasking</div>
+          <div class="product-price">1,799 &euro;</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="tablets">
+        <div class="product-image">&#128241;</div>
+        <div class="product-info">
+          <div class="product-name">Tablet Air 11"</div>
+          <div class="product-description">Lightweight design, 256GB, Wi-Fi 6, all-day battery</div>
+          <div class="product-price">799 &euro;</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="smartwatch">
+        <div class="product-image">&#8986;</div>
+        <div class="product-info">
+          <div class="product-name">Smartwatch Sport</div>
+          <div class="product-description">Dual-band GPS, 14-day battery, advanced workout tracking</div>
+          <div class="product-price">279 &euro;</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="cameras">
+        <div class="product-image">&#128247;</div>
+        <div class="product-info">
+          <div class="product-name">Cinema Camera 6K</div>
+          <div class="product-description">Full-frame sensor, RAW recording, creator-ready workflow</div>
+          <div class="product-price">2,499 &euro;</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="audio">
+        <div class="product-image">&#128266;</div>
+        <div class="product-info">
+          <div class="product-name">Smart Speaker Home</div>
+          <div class="product-description">Room-filling sound, voice assistant, Wi-Fi and Bluetooth</div>
+          <div class="product-price">199 &euro;</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="tvs">
+        <div class="product-image">&#128250;</div>
+        <div class="product-info">
+          <div class="product-name">Samsung QN90D 65"</div>
+          <div class="product-description">Neo QLED 4K, 120Hz, premium HDR brightness</div>
+          <div class="product-price">1,799 &euro;</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="tvs">
+        <div class="product-image">&#128250;</div>
+        <div class="product-info">
+          <div class="product-name">Mini LED TV 75"</div>
+          <div class="product-description">4K 144Hz, Dolby Vision, immersive home cinema experience</div>
+          <div class="product-price">2,099 &euro;</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="gaming">
+        <div class="product-image">&#127918;</div>
+        <div class="product-info">
+          <div class="product-name">VR Gaming Headset</div>
+          <div class="product-description">High-resolution display, motion tracking, immersive gameplay</div>
+          <div class="product-price">549 &euro;</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card" data-category="desktop">
+        <div class="product-image">&#128421;&#65039;</div>
+        <div class="product-info">
+          <div class="product-name">Mini PC Creator</div>
+          <div class="product-description">Ryzen 9, 32GB RAM, 1TB SSD, compact aluminum body</div>
+          <div class="product-price">1,149 &euro;</div>
+          <div class="product-actions">
+            <a href="product-details.html" class="btn-view">Details</a>
+            <button class="btn-add">Add to Cart</button>
           </div>
         </div>
       </div>
@@ -740,11 +908,16 @@
 
   <script>
     const filterButtons = document.querySelectorAll('#product-filters [data-filter]');
-    const productCards = document.querySelectorAll('.products-grid .product-card');
+    const productsGrid = document.querySelector('.products-grid');
+    const productCards = Array.from(document.querySelectorAll('.products-grid .product-card'));
     const pageTitle = document.getElementById('products-page-title');
     const pageSubtitle = document.getElementById('products-page-subtitle');
     const emptyState = document.getElementById('products-empty-state');
     const resultsCopy = document.getElementById('products-results-copy');
+    const searchInput = document.querySelector('[data-product-search]');
+    const sortSelect = document.querySelector('[data-product-sort]');
+    const priceSelect = document.querySelector('[data-product-price]');
+    let activeCategory = 'all';
 
     const categoryMeta = {
       all: {
@@ -777,52 +950,432 @@
       },
       desktop: {
         title: 'Desktop',
-        subtitle: 'Workstations, office tech, cameras and creator gear'
+        subtitle: 'Workstations, office tech and creator setups'
       },
-      displays: {
-        title: 'Displays',
-        subtitle: 'TVs, monitors and large-screen visual products'
+      tablets: {
+        title: 'Tablets',
+        subtitle: 'Portable tablets for work, creativity and entertainment'
+      },
+      cameras: {
+        title: 'Cameras',
+        subtitle: 'Mirrorless, DSLR and action cameras for every creator'
+      },
+      tvs: {
+        title: 'TVs',
+        subtitle: 'Smart TVs and large-screen home entertainment displays'
+      },
+      monitors: {
+        title: 'Monitors',
+        subtitle: 'Gaming and professional computer monitors'
       }
     };
 
-    function applyFilter(category) {
-      const activeCategory = categoryMeta[category] ? category : 'all';
+    function parseCardPrice(card) {
+      const priceText = card.querySelector('.product-price')?.textContent || '0';
+      const numericPrice = priceText.replace(/[^0-9.,]/g, '').replace(/,/g, '');
+      return Number.parseFloat(numericPrice) || 0;
+    }
+
+    function matchesPriceRange(price, range) {
+      if (range === 'all') return true;
+      if (range === '0-100') return price < 100;
+      if (range === '100-500') return price >= 100 && price <= 500;
+      if (range === '500-1000') return price > 500 && price <= 1000;
+      if (range === '1000+') return price > 1000;
+      return true;
+    }
+
+    function refreshProductsView() {
+      const resolvedCategory = categoryMeta[activeCategory] ? activeCategory : 'all';
+      const searchTerm = (searchInput?.value || '').trim().toLowerCase();
+      const sortValue = sortSelect?.value || 'default';
+      const priceRange = priceSelect?.value || 'all';
       let visibleCount = 0;
 
+      const sortedCards = [...productCards].sort((a, b) => {
+        if (sortValue === 'price-asc') return parseCardPrice(a) - parseCardPrice(b);
+        if (sortValue === 'price-desc') return parseCardPrice(b) - parseCardPrice(a);
+        if (sortValue === 'name-asc') {
+          const nameA = a.querySelector('.product-name')?.textContent || '';
+          const nameB = b.querySelector('.product-name')?.textContent || '';
+          return nameA.localeCompare(nameB);
+        }
+        return 0;
+      });
+
+      sortedCards.forEach(card => productsGrid.appendChild(card));
+
       productCards.forEach(card => {
-        const matches = activeCategory === 'all' || card.dataset.category === activeCategory;
+        const categoryMatch = resolvedCategory === 'all' || card.dataset.category === resolvedCategory;
+        const priceMatch = matchesPriceRange(parseCardPrice(card), priceRange);
+        const text = `${card.querySelector('.product-name')?.textContent || ''} ${card.querySelector('.product-description')?.textContent || ''}`.toLowerCase();
+        const searchMatch = !searchTerm || text.includes(searchTerm);
+        const matches = categoryMatch && priceMatch && searchMatch;
         card.dataset.filteredOut = matches ? 'false' : 'true';
         card.style.display = matches ? '' : 'none';
         if (matches) visibleCount += 1;
       });
 
       filterButtons.forEach(button => {
-        const isActive = button.dataset.filter === activeCategory;
+        const isActive = button.dataset.filter === resolvedCategory;
         button.classList.toggle('is-active', isActive);
       });
 
-      pageTitle.textContent = categoryMeta[activeCategory].title;
-      pageSubtitle.textContent = categoryMeta[activeCategory].subtitle;
+      pageTitle.textContent = categoryMeta[resolvedCategory].title;
+      pageSubtitle.textContent = categoryMeta[resolvedCategory].subtitle;
       emptyState.style.display = visibleCount === 0 ? 'block' : 'none';
       resultsCopy.textContent = visibleCount === 0
         ? 'No matching products in this category.'
-        : `${visibleCount} product${visibleCount === 1 ? '' : 's'} available in ${categoryMeta[activeCategory].title}.`;
+        : `${visibleCount} product${visibleCount === 1 ? '' : 's'} available in ${categoryMeta[resolvedCategory].title}.`;
 
-      const nextUrl = activeCategory === 'all'
+      const nextUrl = resolvedCategory === 'all'
         ? 'products.html'
-        : `products.html?category=${activeCategory}`;
+        : `products.html?category=${resolvedCategory}`;
       history.replaceState({}, '', nextUrl);
     }
 
     filterButtons.forEach(button => {
-      button.addEventListener('click', () => applyFilter(button.dataset.filter));
+      button.addEventListener('click', () => {
+        activeCategory = button.dataset.filter;
+        refreshProductsView();
+      });
     });
 
+    searchInput?.addEventListener('input', refreshProductsView);
+    sortSelect?.addEventListener('change', refreshProductsView);
+    priceSelect?.addEventListener('change', refreshProductsView);
+
     const params = new URLSearchParams(window.location.search);
-    applyFilter(params.get('category') || 'all');
+    activeCategory = params.get('category') || 'all';
+    refreshProductsView();
   </script>
   <script src="js/site.js" defer></script>
+  <script>
+    const realProducts = [
+      {
+        name: 'Apple iPhone 15 Pro Max',
+        description: '6.7-inch Super Retina XDR, A17 Pro, 256GB, 5G',
+        image: 'images/Apple iPhone 15 Pro Max.png',
+        badge: 'Apple flagship'
+      },
+      {
+        name: 'Samsung Galaxy S24 Ultra',
+        description: '6.8-inch AMOLED, 256GB, Snapdragon 8 Gen 3, 5G',
+        image: 'images/Samsung Galaxy S24 Ultra.jpg',
+        badge: 'Samsung flagship'
+      },
+      {
+        name: 'Google Pixel 8',
+        description: '6.2-inch OLED, Tensor G3, 128GB, dual camera',
+        image: 'images/Google Pixel 8.jpg',
+        badge: 'Google camera phone'
+      },
+      {
+        name: 'Xiaomi Redmi Note 13 Pro',
+        description: '120Hz AMOLED, 256GB, 200MP camera, fast charging',
+        image: 'images/Xiaomi Redmi Note 13 Pro.jpg',
+        badge: 'Best value'
+      },
+      {
+        name: 'ASUS ROG Phone 8 Pro',
+        description: 'Gaming-focused flagship, AMOLED 165Hz, 512GB',
+        image: 'images/ASUS ROG Phone 8 Pro.jpg',
+        badge: 'Gaming phone'
+      },
+      {
+        name: 'ASUS ROG Zephyrus G14',
+        description: '14-inch gaming laptop, RTX 4060, Ryzen 9, 16GB RAM',
+        image: 'https://source.unsplash.com/featured/800x600/?asus,gaming,laptop',
+        badge: 'ROG series'
+      },
+      {
+        name: 'MacBook Pro 16-inch M3 Pro',
+        description: '16-inch Liquid Retina XDR, 18GB RAM, 512GB SSD',
+        image: 'https://source.unsplash.com/featured/800x600/?macbook,apple,laptop',
+        badge: 'Apple Pro'
+      },
+      {
+        name: 'Acer Aspire 5',
+        description: '15.6-inch laptop, Intel Core i5, 8GB RAM, 512GB SSD',
+        image: 'https://source.unsplash.com/featured/800x600/?acer,laptop',
+        badge: 'Everyday laptop'
+      },
+      {
+        name: 'Dell XPS 13',
+        description: 'Compact ultrabook, Intel Core Ultra, 16GB RAM, 512GB SSD',
+        image: 'https://source.unsplash.com/featured/800x600/?dell,xps,laptop',
+        badge: 'Premium ultrabook'
+      },
+      {
+        name: 'iPad Pro 13-inch (M4)',
+        description: 'Ultra Retina XDR, Apple M4, 256GB, Wi-Fi',
+        image: 'https://source.unsplash.com/featured/800x600/?ipad,tablet,apple',
+        badge: 'Pro tablet'
+      },
+      {
+        name: 'Samsung Galaxy Tab S9',
+        description: '11-inch AMOLED, Snapdragon 8 Gen 2, 128GB',
+        image: 'https://source.unsplash.com/featured/800x600/?samsung,tablet',
+        badge: 'Android tablet'
+      },
+      {
+        name: 'Apple Watch Series 9',
+        description: 'GPS, heart rate tracking, always-on display, 45mm',
+        image: 'https://source.unsplash.com/featured/800x600/?apple,watch,smartwatch',
+        badge: 'Apple wearable'
+      },
+      {
+        name: 'Xiaomi Redmi Watch 4',
+        description: 'AMOLED display, GPS, long battery life, fitness tracking',
+        image: 'https://source.unsplash.com/featured/800x600/?smartwatch,fitness,watch',
+        badge: 'Budget wearable'
+      },
+      {
+        name: 'Sony Alpha a6700',
+        description: '26MP APS-C mirrorless camera, 4K recording, fast AF',
+        image: 'https://source.unsplash.com/featured/800x600/?sony,camera,mirrorless',
+        badge: 'Sony Alpha'
+      },
+      {
+        name: 'Canon EOS R8',
+        description: '24.2MP full-frame mirrorless, 4K video, lightweight body',
+        image: 'https://source.unsplash.com/featured/800x600/?canon,camera,mirrorless',
+        badge: 'Canon EOS'
+      },
+      {
+        name: 'GoPro HERO12 Black',
+        description: '5.3K video, rugged build, waterproof action camera',
+        image: 'https://source.unsplash.com/featured/800x600/?gopro,action,camera',
+        badge: 'Action camera'
+      },
+      {
+        name: 'Sony WH-1000XM5',
+        description: 'Premium wireless ANC headphones with up to 30 hours battery',
+        image: 'https://source.unsplash.com/featured/800x600/?sony,headphones',
+        badge: 'Noise cancelling'
+      },
+      {
+        name: 'Apple AirPods Pro (2nd gen)',
+        description: 'True wireless earbuds with ANC and MagSafe charging case',
+        image: 'https://source.unsplash.com/featured/800x600/?airpods,earbuds,apple',
+        badge: 'Apple audio'
+      },
+      {
+        name: 'JBL Charge 5',
+        description: 'Portable Bluetooth speaker with powerful bass and IP67 rating',
+        image: 'https://source.unsplash.com/featured/800x600/?jbl,bluetooth,speaker',
+        badge: 'Portable speaker'
+      },
+      {
+        name: 'Audio-Technica ATH-M50x',
+        description: 'Professional studio headphones with 45mm drivers',
+        image: 'https://source.unsplash.com/featured/800x600/?studio,headphones',
+        badge: 'Studio monitoring'
+      },
+      {
+        name: 'Samsung QN90D 75-inch',
+        description: '75-inch Neo QLED 4K TV, 120Hz, premium HDR brightness',
+        image: 'https://source.unsplash.com/featured/800x600/?samsung,tv,living-room',
+        badge: 'Neo QLED'
+      },
+      {
+        name: 'Samsung QN90D 65-inch',
+        description: '65-inch Neo QLED 4K TV, 120Hz, premium HDR brightness',
+        image: 'https://source.unsplash.com/featured/800x600/?samsung,neo-qled,tv',
+        badge: 'Neo QLED'
+      },
+      {
+        name: 'LG C3 OLED 65-inch',
+        description: '65-inch OLED evo, Dolby Vision, gaming-ready 120Hz panel',
+        image: 'https://source.unsplash.com/featured/800x600/?oled,tv,lg',
+        badge: 'OLED cinema'
+      },
+      {
+        name: 'LG UltraGear 27GR93U',
+        description: '27-inch 4K gaming monitor, IPS, 144Hz, HDMI 2.1',
+        image: 'https://source.unsplash.com/featured/800x600/?gaming,monitor,desk',
+        badge: '4K gaming'
+      },
+      {
+        name: 'Samsung Odyssey G5 32-inch',
+        description: '32-inch curved gaming monitor, 1440p, 165Hz, VA panel',
+        image: 'https://source.unsplash.com/featured/800x600/?curved,monitor,samsung',
+        badge: 'Curved display'
+      },
+      {
+        name: 'PlayStation 5 Slim',
+        description: '1TB storage, 4K gaming, high-speed SSD, DualSense support',
+        image: 'https://source.unsplash.com/featured/800x600/?playstation,5,console',
+        badge: 'Sony console'
+      },
+      {
+        name: 'Nintendo Switch OLED',
+        description: '7-inch OLED handheld console with versatile docked play',
+        image: 'https://source.unsplash.com/featured/800x600/?nintendo,switch,console',
+        badge: 'Handheld gaming'
+      },
+      {
+        name: 'Keychron K8 Pro',
+        description: 'Wireless mechanical keyboard with hot-swappable switches',
+        image: 'https://source.unsplash.com/featured/800x600/?mechanical,keyboard',
+        badge: 'Mechanical keyboard'
+      },
+      {
+        name: 'Logitech G Pro X Superlight 2',
+        description: 'Ultra-light gaming mouse, HERO sensor, pro-grade wireless',
+        image: 'https://source.unsplash.com/featured/800x600/?gaming,mouse,logitech',
+        badge: 'Esports gear'
+      },
+      {
+        name: 'Anker Prime 20,000mAh',
+        description: 'High-capacity power bank with fast USB-C charging',
+        image: 'https://source.unsplash.com/featured/800x600/?powerbank,charger',
+        badge: 'Travel charging'
+      },
+      {
+        name: 'Belkin BoostCharge Pro 15W',
+        description: 'Wireless charger with MagSafe-ready alignment and compact base',
+        image: 'https://source.unsplash.com/featured/800x600/?wireless,charger',
+        badge: 'Wireless charging'
+      },
+      {
+        name: 'TP-Link Archer AX55',
+        description: 'Wi-Fi 6 router with strong coverage and gigabit performance',
+        image: 'https://source.unsplash.com/featured/800x600/?wifi,router,tp-link',
+        badge: 'Wi-Fi 6'
+      },
+      {
+        name: 'Samsung T7 Shield 1TB',
+        description: 'Rugged external SSD with USB-C and up to 1050MB/s speeds',
+        image: 'https://source.unsplash.com/featured/800x600/?external,ssd,storage',
+        badge: 'Portable SSD'
+      },
+      {
+        name: 'Anker 555 USB-C Hub',
+        description: 'Multiport docking hub with HDMI, USB-A, USB-C and SD support',
+        image: 'https://source.unsplash.com/featured/800x600/?usb-c,hub,dock',
+        badge: 'Desk setup'
+      },
+      {
+        name: 'Spigen Ultra Hybrid MagFit',
+        description: 'Transparent MagSafe-compatible case with shock protection',
+        image: 'https://source.unsplash.com/featured/800x600/?phone,case',
+        badge: 'Phone protection'
+      },
+      {
+        name: 'Belkin UltraGlass 2',
+        description: 'Tempered glass screen protector with anti-scratch finish',
+        image: 'https://source.unsplash.com/featured/800x600/?screen,protector,phone',
+        badge: 'Screen protection'
+      },
+      {
+        name: 'HP OfficeJet Pro 9025e',
+        description: 'All-in-one wireless printer for office and home productivity',
+        image: 'https://source.unsplash.com/featured/800x600/?printer,office,hp',
+        badge: 'Office printer'
+      },
+      {
+        name: 'Logitech Brio 4K',
+        description: '4K webcam with HDR, autofocus and dual noise-reduction mics',
+        image: 'https://source.unsplash.com/featured/800x600/?webcam,desk',
+        badge: 'Video calls'
+      },
+      {
+        name: 'Blue Yeti USB Microphone',
+        description: 'Popular USB mic for streaming, podcasts and voice recording',
+        image: 'https://source.unsplash.com/featured/800x600/?usb,microphone,podcast',
+        badge: 'Content creator'
+      },
+      {
+        name: 'Samsung Galaxy Z Fold6',
+        description: '7.6-inch foldable AMOLED, multitasking powerhouse, 512GB',
+        image: 'https://source.unsplash.com/featured/800x600/?foldable,smartphone',
+        badge: 'Foldable flagship'
+      },
+      {
+        name: 'iPad Air 11-inch',
+        description: 'Thin and light tablet with 256GB storage and all-day battery',
+        image: 'https://source.unsplash.com/featured/800x600/?tablet,ipad',
+        badge: 'Lightweight tablet'
+      },
+      {
+        name: 'Garmin Forerunner 265',
+        description: 'Sport smartwatch with GPS, AMOLED display and advanced health tracking',
+        image: 'https://source.unsplash.com/featured/800x600/?smartwatch,sport',
+        badge: 'Fitness focus'
+      },
+      {
+        name: 'Blackmagic Cinema Camera 6K',
+        description: 'Full-frame cinema camera with RAW workflows and pro video tools',
+        image: 'https://source.unsplash.com/featured/800x600/?cinema,camera',
+        badge: 'Creator cinema'
+      },
+      {
+        name: 'Sonos Era 300',
+        description: 'Smart home speaker with spacious sound and voice control',
+        image: 'https://source.unsplash.com/featured/800x600/?smart,speaker',
+        badge: 'Smart speaker'
+      },
+      {
+        name: 'Hisense U8N 75-inch',
+        description: 'Large Mini LED TV with strong HDR brightness and gaming features',
+        image: 'https://source.unsplash.com/featured/800x600/?mini-led,tv',
+        badge: 'Big-screen TV'
+      },
+      {
+        name: 'Meta Quest 3',
+        description: 'Standalone mixed reality headset for gaming and entertainment',
+        image: 'https://source.unsplash.com/featured/800x600/?vr,headset',
+        badge: 'VR gaming'
+      },
+      {
+        name: 'Apple Mac mini M4',
+        description: 'Compact desktop powerhouse with 32GB memory and 1TB SSD',
+        image: 'https://source.unsplash.com/featured/800x600/?mini,pc,desktop',
+        badge: 'Compact desktop'
+      }
+    ];
+
+    const categoryIcons = {
+      smartfone: '📱',
+      laptope: '💻',
+      tablets: '📱',
+      smartwatch: '⌚',
+      cameras: '📷',
+      audio: '🎧',
+      tvs: '📺',
+      monitors: '🖥️',
+      gaming: '🎮',
+      aksesore: '🔌',
+      desktop: '🖥️'
+    };
+
+    document.querySelectorAll('.products-grid .product-card').forEach((card, index) => {
+      const product = realProducts[index];
+      if (!product) return;
+
+      const imageWrap = card.querySelector('.product-image');
+      const nameEl = card.querySelector('.product-name');
+      const descriptionEl = card.querySelector('.product-description');
+
+      if (imageWrap) {
+        const category = card.dataset.category;
+        imageWrap.removeAttribute('data-badge');
+        imageWrap.textContent = categoryIcons[category] || '🛍️';
+      }
+
+      if (nameEl) nameEl.textContent = product.name;
+      if (descriptionEl) descriptionEl.textContent = product.description;
+    });
+  </script>
+
 </body>
 </html>
+
+
+
+
+
+
 
 

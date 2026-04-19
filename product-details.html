@@ -48,12 +48,32 @@
               <strong>Desktop</strong>
               <p>Workstations, office tech and creator setups</p>
             </div>
+          </a>          <a class="category-item" href="products.html?category=tablets">
+            <span class="category-icon">📱</span>
+            <div>
+              <strong>Tablets</strong>
+              <p>Portable tablets for work, creativity and entertainment</p>
+            </div>
           </a>
-          <a class="category-item" href="products.html?category=displays">
+          <a class="category-item" href="products.html?category=cameras">
+            <span class="category-icon">📷</span>
+            <div>
+              <strong>Cameras</strong>
+              <p>Mirrorless, DSLR and action cameras</p>
+            </div>
+          </a>
+          <a class="category-item" href="products.html?category=tvs">
             <span class="category-icon">📺</span>
             <div>
-              <strong>Displays</strong>
-              <p>TVs, monitors and visual entertainment gear</p>
+              <strong>TVs</strong>
+              <p>Smart TVs and home entertainment screens</p>
+            </div>
+          </a>
+          <a class="category-item" href="products.html?category=monitors">
+            <span class="category-icon">🖥️</span>
+            <div>
+              <strong>Monitors</strong>
+              <p>Gaming and professional computer monitors</p>
             </div>
           </a>
           <a class="category-item" href="products.html?category=audio">
@@ -92,7 +112,10 @@
               <a class="category-item" href="products.html?category=aksesore"><span class="category-icon">Access</span><div><strong>Accessories</strong><p>Chargers, cases, headphones and more</p></div></a>
               <a class="category-item" href="products.html?category=laptope"><span class="category-icon">Laptop</span><div><strong>Laptops</strong><p>Gaming, business and everyday laptops</p></div></a>
               <a class="category-item" href="products.html?category=desktop"><span class="category-icon">Desktop</span><div><strong>Desktop</strong><p>Workstations, office tech and creator setups</p></div></a>
-              <a class="category-item" href="products.html?category=displays"><span class="category-icon">Display</span><div><strong>Displays</strong><p>TVs, monitors and visual entertainment gear</p></div></a>
+              <a class="category-item" href="products.html?category=tablets"><span class="category-icon">📱</span><div><strong>Tablets</strong><p>Portable tablets for work, creativity and entertainment</p></div></a>
+              <a class="category-item" href="products.html?category=cameras"><span class="category-icon">📷</span><div><strong>Cameras</strong><p>Mirrorless, DSLR and action cameras</p></div></a>
+              <a class="category-item" href="products.html?category=tvs"><span class="category-icon">📺</span><div><strong>TVs</strong><p>Smart TVs and home entertainment screens</p></div></a>
+              <a class="category-item" href="products.html?category=monitors"><span class="category-icon">🖥️</span><div><strong>Monitors</strong><p>Gaming and professional computer monitors</p></div></a>
               <a class="category-item" href="products.html?category=audio"><span class="category-icon">Audio</span><div><strong>Audio</strong><p>Speakers, headphones and sound systems</p></div></a>
               <a class="category-item" href="products.html?category=gaming"><span class="category-icon">Gaming</span><div><strong>Gaming</strong><p>Consoles, controllers and accessories</p></div></a>
             </div>
@@ -108,12 +131,14 @@
     <p><a href="products.html" class="news-read-more">Back to Products</a></p>
 
     <section class="product-detail">
-      <div class="product-detail-image">Phone</div>
+      <div class="product-detail-image">
+        <img src="images/Apple iPhone 15 Pro Max.png" alt="Apple iPhone 15 Pro Max" loading="eager">
+      </div>
 
       <div class="product-detail-info">
-        <h1>Smartphone Premium</h1>
-        <p class="text-muted">Top-tier flagship performance with fast charging, premium materials, and long-term software support.</p>
-        <p class="product-detail-price">999 EUR</p>
+        <h1>Apple iPhone 15 Pro Max</h1>
+        <p class="text-muted">Titanium flagship with strong cameras, fast performance, premium finish, and long-term software support.</p>
+        <p class="product-detail-price">1,199 €</p>
 
         <div class="info-card">
           <h3>Availability</h3>
@@ -123,12 +148,12 @@
         <div class="product-specs">
           <h3>Technical Specifications</h3>
           <ul>
-            <li><strong>Display:</strong> 6.7-inch AMOLED panel</li>
-            <li><strong>Processor:</strong> Snapdragon 8 Gen series</li>
-            <li><strong>Memory:</strong> 12 GB RAM / 256 GB storage</li>
-            <li><strong>Camera:</strong> Triple rear system with night mode</li>
-            <li><strong>Battery:</strong> All-day battery with fast charging</li>
-            <li><strong>Connectivity:</strong> 5G, Wi-Fi 6, Bluetooth</li>
+            <li><strong>Display:</strong> 6.7-inch Super Retina XDR display</li>
+            <li><strong>Processor:</strong> Apple A17 Pro chip</li>
+            <li><strong>Memory:</strong> 256 GB storage</li>
+            <li><strong>Camera:</strong> Triple camera system with telephoto lens</li>
+            <li><strong>Battery:</strong> All-day battery life with fast charging</li>
+            <li><strong>Connectivity:</strong> 5G, Wi-Fi 6E, Bluetooth, USB-C</li>
           </ul>
         </div>
 
@@ -181,6 +206,34 @@
     </div>
   </footer>
 
+  <script>
+    const detailImage = document.querySelector('.product-detail-image img');
+
+    if (detailImage) {
+      detailImage.addEventListener('error', () => {
+        const svg = `
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+            <defs>
+              <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#0f3460"/>
+                <stop offset="100%" stop-color="#1f6feb"/>
+              </linearGradient>
+            </defs>
+            <rect width="1200" height="900" fill="url(#bg)"/>
+            <circle cx="930" cy="170" r="150" fill="rgba(255,255,255,0.08)"/>
+            <circle cx="180" cy="760" r="180" fill="rgba(255,255,255,0.08)"/>
+            <text x="90" y="360" fill="#ffffff" font-family="Arial, sans-serif" font-size="72" font-weight="700">Apple iPhone 15 Pro Max</text>
+            <text x="90" y="445" fill="#dbeafe" font-family="Arial, sans-serif" font-size="36">Product image fallback</text>
+          </svg>
+        `.trim();
+
+        detailImage.src = `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
+      }, { once: true });
+    }
+  </script>
   <script src="js/site.js" defer></script>
 </body>
 </html>
+
+
+
